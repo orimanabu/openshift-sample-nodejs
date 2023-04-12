@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
     const host = req.headers.host;
     const localAddr = ip.address();
     res.status(200).send(
-        `${currentTime} Hello, World: HOST=${host}, LocalAddr=${localAddr}, RemoteAddr=${remoteAddr}`
+        `${currentTime} Hello, World: HOST=${host}, LocalAddr=${localAddr}, RemoteAddr=${remoteAddr}\n`
     );
 });
 
