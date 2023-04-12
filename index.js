@@ -18,5 +18,5 @@ app.get("/", (req, res) => {
     );
 });
 
-app.listen(portNumber);
+app.listen(portNumber, '0.0.0.0');
 console.log(`PortNumber is ${portNumber}`);
